@@ -5,7 +5,7 @@ import openai
 df = pd.read_csv('data_gender.csv')
 
 # OpenAI API Key 
-openai.api_key = "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"#"sk-proj-HmHH4buqmFEO2VP6MHAcT3BlbkFJVAxMnqTHVdW2pf9uqXw3"
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 
 # Function to modify the sentence based on gender choice using the dataframe as support
